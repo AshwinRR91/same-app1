@@ -32,7 +32,7 @@ const TechBody = ({page}) =>{
                     <img src={imageURL} alt="Avatar" style={{width:"100%"}}></img>
                     <div className="container">
                         <p>Company : {companyName}</p> 
-                        <p>Model : {model}</p>
+                        <p>Model: {model}</p>
                         <p>Price : {priceInRs}</p>
                     </div>
                 </div>
