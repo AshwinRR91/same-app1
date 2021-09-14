@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import FormCom from './FormCom'; 
 
 
 
@@ -23,6 +24,7 @@ const TechBody = ({page}) =>{
         
         return(
         <div>
+             <FormCom></FormCom>
             {
             phones.map((phone, index) => {
                 const {companyName, priceInRs, model, imageURL} = phone
