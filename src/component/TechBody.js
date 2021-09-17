@@ -3,7 +3,7 @@ import FormCom from './FormCom';
 
 
 
-const TechBody = ({page}) =>{
+const TechBody = () =>{
 
     const [phones, setPhones] = useState([]);
     const getPhones = async()=>{
@@ -20,11 +20,9 @@ const TechBody = ({page}) =>{
     useEffect(()=>{
         getPhones();
         },[])
-    if (page){
-        
         return(
         <div>
-             <FormCom></FormCom>
+            
             {
             phones.map((phone, index) => {
                 const {companyName, priceInRs, model, imageURL} = phone
@@ -44,12 +42,6 @@ const TechBody = ({page}) =>{
         </div>
         )
     }
-    else{
-    return(
-        <div>
-        </div>
-    )
-    }
-}
+
 
 export default TechBody;

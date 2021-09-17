@@ -19,7 +19,7 @@ const FormCom = () => {
         (async() => {
             const checkData = await fetch("http://localhost:8080/mobilePhones",
             {
-                method : 'POST',
+               method : 'POST',
                 headers: {
                             'Accept': 'application/json',
                             'Content-Type': 'application/json'
